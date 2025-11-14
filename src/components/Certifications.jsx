@@ -1,9 +1,12 @@
-import { Award, FileBadge } from 'lucide-react'
+import { Award } from 'lucide-react'
 
 const certs = [
-  { name: 'CompTIA Security+ (Studying)', issuer: 'CompTIA', year: '2025' },
-  { name: 'Google Cybersecurity Certificate', issuer: 'Google/Coursera', year: '2024' },
-  { name: 'TryHackMe Jr Penetration Tester Path', issuer: 'TryHackMe', year: '2024' },
+  { name: 'eJPT – INE', issuer: 'Practical Penetration Testing', year: '' },
+  { name: 'Certified Network Security Practitioner (CNSP)', issuer: 'TheSecOpsGroup', year: '' },
+  { name: 'Geo-data Sharing and CyberSecurity', issuer: 'IIRS (ISRO)', year: '' },
+  { name: 'Ethical Hacking Essentials', issuer: 'EC-Council', year: '' },
+  { name: 'Network Defense & Cyber Threat Management', issuer: 'Cisco', year: '' },
+  { name: 'Web Application Penetration Testing – AimNxt', issuer: 'Certification Course (Jul 2025 – Oct 2025)', year: '' },
 ]
 
 export default function Certifications() {
@@ -11,8 +14,8 @@ export default function Certifications() {
     <section id="certs" className="py-20 bg-gradient-to-b from-slate-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-10">
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Certifications & Learning</h2>
-          <p className="mt-2 text-slate-600">Continuous learning to strengthen fundamentals and practice.</p>
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Certifications</h2>
+          <p className="mt-2 text-slate-600">Credentials and coursework aligned to my hands-on learning.</p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -23,7 +26,7 @@ export default function Certifications() {
               </div>
               <h3 className="mt-3 font-semibold text-slate-900">{c.name}</h3>
               <p className="text-sm text-slate-600">{c.issuer}</p>
-              <p className="mt-1 text-xs text-slate-500">{c.year}</p>
+              {c.year && <p className="mt-1 text-xs text-slate-500">{c.year}</p>}
             </div>
           ))}
         </div>

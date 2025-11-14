@@ -1,29 +1,29 @@
-import { ExternalLink, ShieldAlert, Cog, Activity, GlobeLock } from 'lucide-react'
+import { ExternalLink } from 'lucide-react'
 
 const projects = [
   {
-    title: 'Home Lab SOC Dashboard',
-    description: 'Built a small ELK stack to ingest Windows and Linux logs. Created basic detection rules for RDP brute force and sudo misuse.',
-    tags: ['ELK', 'Sysmon', 'Sigma'],
-    link: '#'
+    title: 'Network Sniffer (Python)',
+    description: 'Real-time packet capture and analysis for 100K+ packets with custom filtering and alerting to detect suspicious activity. Improved monitoring efficiency by 35%.',
+    tags: ['Python', 'Scapy', 'PCAP', 'Detection'],
+    link: '#',
+  },
+  {
+    title: 'Web Crawler (Python)',
+    description: 'Multithreaded crawler that scraped and indexed 50K+ pages, improving crawl performance by 40% and structuring data for research/analysis.',
+    tags: ['Python', 'Threads', 'Requests/BS4'],
+    link: '#',
   },
   {
     title: 'Vulnerability Scan & Remediation',
-    description: 'Ran Nessus scans against a lab network, prioritized CVEs by CVSS, and documented remediation steps with before/after validation.',
+    description: 'Assessed a lab network with Nessus, prioritized CVEs by CVSS, and documented remediation with before/after validation.',
     tags: ['Nessus', 'CVSS', 'Windows/Linux'],
-    link: '#'
+    link: '#',
   },
   {
-    title: 'Incident Response Playbooks',
-    description: 'Drafted step-by-step response guides for phishing, malware on endpoint, and credential compromise scenarios.',
-    tags: ['IR', 'Playbooks', 'NIST 800-61'],
-    link: '#'
-  },
-  {
-    title: 'Security Automation Scripts',
-    description: 'Python and bash scripts to parse logs, enrich indicators, and generate daily security summaries.',
-    tags: ['Python', 'Bash', 'APIs'],
-    link: '#'
+    title: 'SOC Log Monitoring & Detections',
+    description: 'Structured log monitoring workflows and basic detections for brute-force and suspicious process creation.',
+    tags: ['SIEM', 'Windows', 'Linux'],
+    link: '#',
   },
 ]
 

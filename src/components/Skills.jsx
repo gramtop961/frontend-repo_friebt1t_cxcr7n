@@ -1,14 +1,14 @@
 import { Shield, Bug, Radar, Terminal, Server, KeyRound, Network, Database } from 'lucide-react'
 
 const skills = [
-  { icon: Shield, title: 'Security Fundamentals', items: ['CIA triad', 'NIST CSF', 'OWASP Top 10'] },
-  { icon: Radar, title: 'Monitoring & Detection', items: ['SIEM (Splunk/ELK)', 'Log analysis', 'Use cases'] },
-  { icon: Bug, title: 'Vulnerability', items: ['Nessus/OpenVAS', 'CVSS', 'Patch mgmt'] },
-  { icon: Terminal, title: 'Tooling', items: ['Linux', 'Bash/Python', 'Git'] },
-  { icon: Server, title: 'Infrastructure', items: ['Windows AD basics', 'Cloud security intro', 'Hardening'] },
-  { icon: KeyRound, title: 'Identity', items: ['IAM basics', 'MFA/SSO', 'Least privilege'] },
-  { icon: Network, title: 'Networking', items: ['TCP/IP', 'Firewalls', 'Wireshark'] },
-  { icon: Database, title: 'Data', items: ['SQL basics', 'SIEM queries', 'JSON'] },
+  { icon: Shield, title: 'Offensive Security & VAPT', items: ['Nmap', 'Nessus', 'Shodan', 'Burp Suite', 'Metasploit', 'Gobuster', 'SQLMap'] },
+  { icon: Radar, title: 'Threat Detection & Response', items: ['SIEM (Splunk, Seceon, Microsoft Sentinel)', 'IDS/IPS', 'Log monitoring'] },
+  { icon: Bug, title: 'Threat Intelligence & IR', items: ['VirusTotal', 'AbuseIPDB', 'IR & Forensics (Basics)'] },
+  { icon: Terminal, title: 'Pentesting Methodologies', items: ['OWASP Top 10', 'Kill chain', 'Reporting'] },
+  { icon: Network, title: 'Networking & Protocols', items: ['TCP/IP', 'DNS/HTTPs', 'VPN', 'Wireless Security', 'Firewalls'] },
+  { icon: Server, title: 'Operating Systems', items: ['Kali Linux', 'Ubuntu', 'Windows'] },
+  { icon: KeyRound, title: 'Identity & Access', items: ['IAM', 'MFA/SSO', 'Least privilege'] },
+  { icon: Database, title: 'Cloud Security', items: ['AWS (S3 Security)', 'Azure'] },
 ]
 
 export default function Skills() {
@@ -16,8 +16,8 @@ export default function Skills() {
     <section id="skills" className="py-20 bg-gradient-to-b from-white to-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-10">
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Core skills</h2>
-          <p className="mt-2 text-slate-600">A foundation built for SOC and blue team work.</p>
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Technical Skills</h2>
+          <p className="mt-2 text-slate-600">Tools and domains I work with across blue and red team fundamentals.</p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

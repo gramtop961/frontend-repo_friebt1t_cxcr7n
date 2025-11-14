@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Menu, Shield, Github, Linkedin, Mail } from 'lucide-react'
+import { Menu, Shield, Github, Linkedin, Mail, Phone } from 'lucide-react'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -12,6 +12,9 @@ export default function Navbar() {
     { href: '#contact', label: 'Contact' },
   ]
 
+  const linkedInUrl = '#'
+  const githubUrl = '#'
+
   return (
     <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/60 bg-white/80 border-b border-white/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -20,7 +23,7 @@ export default function Navbar() {
             <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-600 text-white shadow-sm">
               <Shield className="h-5 w-5" />
             </span>
-            <span>Cyber Portfolio</span>
+            <span>Kasani Vignesh Kumar</span>
           </a>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -32,10 +35,10 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
-            <a href="https://github.com/" target="_blank" rel="noreferrer" className="p-2 rounded-md hover:bg-slate-100">
+            <a href={githubUrl} target="_blank" rel="noreferrer" className="p-2 rounded-md hover:bg-slate-100" title="GitHub">
               <Github className="h-5 w-5" />
             </a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="p-2 rounded-md hover:bg-slate-100">
+            <a href={linkedInUrl} target="_blank" rel="noreferrer" className="p-2 rounded-md hover:bg-slate-100" title="LinkedIn">
               <Linkedin className="h-5 w-5" />
             </a>
             <a href="#contact" className="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-slate-900 text-white hover:bg-slate-800">
@@ -44,7 +47,7 @@ export default function Navbar() {
             </a>
           </div>
 
-          <button onClick={() => setOpen(!open)} className="md:hidden p-2 rounded-md hover:bg-slate-100">
+          <button onClick={() => setOpen(!open)} className="md:hidden p-2 rounded-md hover:bg-slate-100" aria-label="Toggle menu">
             <Menu className="h-6 w-6" />
           </button>
         </div>
@@ -58,11 +61,14 @@ export default function Navbar() {
                 </a>
               ))}
               <div className="flex items-center gap-3 px-1 pt-2">
-                <a href="https://github.com/" target="_blank" rel="noreferrer" className="p-2 rounded-md hover:bg-slate-100">
+                <a href={githubUrl} target="_blank" rel="noreferrer" className="p-2 rounded-md hover:bg-slate-100" title="GitHub">
                   <Github className="h-5 w-5" />
                 </a>
-                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="p-2 rounded-md hover:bg-slate-100">
+                <a href={linkedInUrl} target="_blank" rel="noreferrer" className="p-2 rounded-md hover:bg-slate-100" title="LinkedIn">
                   <Linkedin className="h-5 w-5" />
+                </a>
+                <a href="tel:+919849556730" className="p-2 rounded-md hover:bg-slate-100" title="Call">
+                  <Phone className="h-5 w-5" />
                 </a>
               </div>
             </nav>
